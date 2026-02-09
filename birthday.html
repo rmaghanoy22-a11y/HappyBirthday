@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday! 🎂</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://assets.mixkit.co" crossorigin>
+</head>
+<body>
+  <div class="floating-bg" aria-hidden="true">
+    <div class="balloon balloon-1">🎈</div>
+    <div class="balloon balloon-2">🎈</div>
+    <div class="balloon balloon-3">⭐</div>
+    <div class="balloon balloon-4">🎈</div>
+    <div class="balloon balloon-5">⭐</div>
+    <div class="balloon balloon-6">🎈</div>
+    <div class="balloon balloon-7">⭐</div>
+    <div class="balloon balloon-8">🎈</div>
+  </div>
+
+  <audio id="birthday-music" loop preload="auto" aria-label="Birthday background music">
+    <source src="https://assets.mixkit.co/music/preview/mixkit-happy-birthday-to-you-415.mp3" type="audio/mpeg">
+    <source src="music/happybirthday.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <main class="page-wrapper">
+    <section class="landing" id="landing">
+      <h1 class="birthday-title">
+        <span class="title-emoji">🎂</span>
+        <span class="title-text">Happy Birthday!</span>
+      </h1>
+      <p class="subtitle">A special day deserves a special wish</p>
+    </section>
+    <!-- First card: for Charlie Shaine -->
+    <section class="card-section" id="card-section" aria-label="Birthday card for Charlie Shaine">
+      <div class="card-container" id="card-container">
+        <div class="card" id="card" role="button" tabindex="0" aria-expanded="false" aria-label="Click to open or close birthday card">
+          <div class="card-front">
+            <span class="card-front-emoji">🎂</span>
+            <p class="card-front-text">Click to open</p>
+          </div>
+          <div class="card-inside">
+            <div class="sparkles" aria-hidden="true"></div>
+            <div class="card-photo-wrap">
+              <img id="birthday-photo-charlie" src="image/birth.jpg" alt="Birthday person Charlie Shaine" onerror="this.classList.add('hide'); this.nextElementSibling.classList.remove('hide');">
+              <div class="card-photo-placeholder hide" aria-hidden="true">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-text">Add <strong>image/birth.jpg</strong> for Charlie's photo</span>
+              </div>
+            </div>
+            <p class="card-message" id="card-message">
+              Happy Birthday, <span id="birthday-name">Charlie Shaine</span>! 🎉
+            </p>
+            <p class="card-wish">
+              I wish you happiness, good health, and many blessings.
+              Thank you for being a great friend and for all the fun memories we share.
+              Stay kind, strong, and keep chasing your dreams.
+              Enjoy your special day you deserve it!
+            </p>
+            <div class="hearts" aria-hidden="true">
+              <span class="heart">❤️</span>
+              <span class="heart">💖</span>
+              <span class="heart">💕</span>
+            </div>
+            <button type="button" class="btn-close-card" id="btn-close-card">Close Card</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second card: for Ken Mark -->
+    <section class="card-section" id="card-section-2" aria-label="Birthday card for Ken Mark">
+      <div class="card-container">
+        <div class="card" id="card-2" role="button" tabindex="0" aria-expanded="false" aria-label="Click to open or close birthday card for Ken Mark">
+          <div class="card-front">
+            <span class="card-front-emoji">🎉</span>
+            <p class="card-front-text">Click to open</p>
+          </div>
+          <div class="card-inside">
+            <div class="sparkles" aria-hidden="true"></div>
+            <div class="card-photo-wrap">
+              <img id="birthday-photo-ken" src="image/ken.jpg" alt="Birthday person Ken Mark" onerror="this.classList.add('hide'); this.nextElementSibling.classList.remove('hide');">
+              <div class="card-photo-placeholder hide" aria-hidden="true">
+                <span class="photo-placeholder-icon">📷</span>
+                <span class="photo-placeholder-text">Add <strong>image/kenmark.jpg</strong> for Ken's photo</span>
+              </div>
+            </div>
+            <p class="card-message">
+              Happy Birthday, <span>Ken Mark</span>! 🎉
+            </p>
+            <p class="card-wish">
+              May your day be filled with joy, laughter, and all the things that make you smile.
+              Thank you for being a special friend more blessings and awesome moments ahead!
+            </p>
+            <div class="hearts" aria-hidden="true">
+              <span class="heart">❤️</span>
+              <span class="heart">💖</span>
+              <span class="heart">💕</span>
+            </div>
+            <button type="button" class="btn-close-card" id="btn-close-card-2">Close Card</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="cake-overlay" id="cake-overlay" aria-hidden="true" aria-live="polite">
+    <div class="cake-scene">
+      <div class="cake-candles">
+        <div class="candle"><span class="flame"></span><span class="wick"></span></div>
+        <div class="candle"><span class="flame"></span><span class="wick"></span></div>
+        <div class="candle"><span class="flame"></span><span class="wick"></span></div>
+      </div>
+      <div class="cake-body">
+        <div class="cake-layer cake-top"></div>
+        <div class="cake-layer cake-middle"></div>
+        <div class="cake-layer cake-bottom"></div>
+      </div>
+      <div class="cake-plate"></div>
+      <p class="cake-text">Make a wish!</p>
+    </div>
+  </div>
+
+  <div class="confetti-container" id="confetti-container" aria-hidden="true"></div>
+
+  <footer class="site-footer">
+    <br><br>
+    <p class="footer-text">Crafted by LENNETH X RYEL</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

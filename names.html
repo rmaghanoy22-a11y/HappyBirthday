@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter Name – Birthday Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="name-page">
+  <div class="floating-bg" aria-hidden="true">
+    <div class="balloon balloon-1">🎈</div>
+    <div class="balloon balloon-2">🎈</div>
+    <div class="balloon balloon-3">⭐</div>
+    <div class="balloon balloon-4">🎈</div>
+    <div class="balloon balloon-5">⭐</div>
+  </div>
+
+  <main class="name-page-wrapper">
+    <section class="name-section">
+      <h1 class="name-page-title">
+        <span class="title-emoji">🎂</span>
+        Birthday Card
+      </h1>
+      <p class="name-page-subtitle">Who is celebrating today?</p>
+      <form class="name-form" id="name-form" action="birthday.html" method="get">
+        <div class="name-input-wrap">
+          <label for="birthday-name-input" class="name-input-label">Birthday person's name</label>
+          <input type="text" id="birthday-name-input" name="name" class="name-input" placeholder="e.g. Tanay" maxlength="50" autocomplete="off" aria-label="Enter birthday person's name">
+        </div>
+        <button type="submit" class="btn-continue" id="btn-continue">
+          Continue to Birthday Card →
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <script src="name.js"></script>
+</body>
+</html>
