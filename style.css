@@ -12,7 +12,8 @@
   --color-primary-dark: #c2185b;
   --color-text: #333;
   --color-text-soft: #666;
-  --font-title: 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Fredoka', 'Segoe UI', sans-serif;
+  --font-body: 'Quicksand', 'Segoe UI', sans-serif;
   --radius-card: 24px;
   --radius-btn: 999px;
   --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -32,7 +33,7 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: var(--font-title);
+  font-family: var(--font-body);
   color: var(--color-text);
   background: var(--color-bg);
   background-attachment: fixed;
@@ -107,12 +108,13 @@ body {
 
 /* Big birthday title with glow and animation */
 .birthday-title {
+  font-family: var(--font-display);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.25rem;
   font-size: clamp(2rem, 8vw, 3.5rem);
-  font-weight: 800;
+  font-weight: 600;
   color: var(--color-primary-dark);
   text-shadow: 0 0 20px var(--glow-color), 0 0 40px var(--glow-color);
   animation: title-pop 1s ease-out, glow-pulse 2.5s ease-in-out infinite 1s;
@@ -246,8 +248,9 @@ body {
 }
 
 .name-page-title {
+  font-family: var(--font-display);
   font-size: clamp(1.75rem, 5vw, 2.25rem);
-  font-weight: 800;
+  font-weight: 600;
   color: var(--color-primary-dark);
   margin-bottom: 0.5rem;
   display: flex;
@@ -377,8 +380,9 @@ body {
 
 /* Card inside content */
 .card-message {
+  font-family: var(--font-display);
   font-size: clamp(1.25rem, 4vw, 1.6rem);
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-primary-dark);
   margin-bottom: 0.75rem;
   text-align: center;
@@ -639,6 +643,7 @@ body {
 }
 
 .cake-text {
+  font-family: var(--font-display);
   margin-top: 1rem;
   font-size: 1.25rem;
   font-weight: 600;
